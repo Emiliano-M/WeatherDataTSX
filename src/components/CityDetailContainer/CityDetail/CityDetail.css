@@ -1,0 +1,13 @@
+.cityDetail{
+    margin: 12vh auto;
+    width: 270px;
+    height: fit-content;
+    background: #212121;
+    background: linear-gradient(344deg, #292929 0%, rgba(16,16,18,1) 50%);
+    box-shadow: 4px 6px 14px #19191948;
+    transition: border-radius cubic-bezier(0.075, 0.82, 0.165, 1) 1s,
+                 transform cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+    color: #F9F9F9;
+    padding: 16px;
+    transition: all .3s;  
+}
