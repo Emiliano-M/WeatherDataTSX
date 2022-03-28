@@ -9,6 +9,7 @@ export const getCityById = () => {
             country
             weather {
                 summary{
+                    title
                     icon
                 }
                 temperature {

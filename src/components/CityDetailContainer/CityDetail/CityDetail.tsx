@@ -20,7 +20,7 @@ const CityDetail = (props:props) => {
 
     return data.getCityById.map((data:any) => (
     <div key={data.name}>   
-        <Card className="cityDetail">
+        <Card className={`cityDetail ${data.weather.summary.title}`}>
         <CardImg className='img' alt='Weather image' src={`http://openweathermap.org/img/wn/${data.weather.summary.icon}@2x.png`}/>
         <CardBody>
         <CardTitle tag="h5">

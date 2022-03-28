@@ -11,3 +11,29 @@
     padding: 16px;
     transition: all .3s;  
 }
+
+.Clouds{
+    background: #575555 !important;
+    background: linear-gradient(344deg, #3a3939 0%, rgb(53, 53, 59) 50%);
+    box-shadow: 4px 6px 14px #19191948;
+    transition: border-radius cubic-bezier(0.075, 0.82, 0.165, 1) 1s,
+                 transform cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+}
+
+.Clear{
+    background: #141b31 !important;
+    background: linear-gradient(344deg, #181c3d 0%, rgb(19, 19, 58) 50%);
+    box-shadow: 4px 6px 14px #19191948;
+    transition: border-radius cubic-bezier(0.075, 0.82, 0.165, 1) 1s,
+                 transform cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+}
+
+.Haze{
+    background: #3d3b3b !important;
+    background: linear-gradient(344deg, #3a3939 0%, rgb(53, 53, 59) 50%);
+    box-shadow: 4px 6px 14px #19191948;
+    transition: border-radius cubic-bezier(0.075, 0.82, 0.165, 1) 1s,
+                 transform cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+}
+
+
