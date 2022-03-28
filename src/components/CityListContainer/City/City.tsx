@@ -3,6 +3,7 @@ import './City.css'
 import { Link } from 'react-router-dom';
 import { getCityById } from '../../../service/db';
 import { useQuery } from '@apollo/client';
+import Loading from '../../Loading/Loading';
 export interface props{
   cityId:string
 }
@@ -12,10 +13,9 @@ const City = (props:props) => {
   const cityId = props.cityId
   const {loading, error, data} = useQuery(getCityById(), {variables: {cityId}})
 
-  if (loading) return <div className="spinner"> <svg className="circular" viewBox="25 25 50 50"> <circle className="path" cx="50" cy="50" r="20" fill="none" strokeWidth="3" strokeMiterlimit="10"></circle></svg></div>;
+  if (loading) return <Loading/>
   if (error) return <p>Error :(</p>;
 
-  console.log(data)
   return data.getCityById.map((data:any) => (
     <div key={data.name}>
       <Link to={`/city/${props.cityId}`}>

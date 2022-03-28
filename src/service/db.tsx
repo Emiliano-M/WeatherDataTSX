@@ -25,6 +25,5 @@ export const getCityById = () => {
             }
         }
     `;
-        console.log(citybyId)
     return citybyId;  
 }
